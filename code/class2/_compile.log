@@ -1,0 +1,8 @@
+[1mmyvariable.cpp:7:18: [0m[0;1;35mwarning: [0m[1mvariable 'myvar' is uninitialized when used here [-Wuninitialized][0m
+    std::cout << myvar << std::endl;
+[0;1;32m                 ^~~~~
+[0m[1mmyvariable.cpp:6:14: [0m[0;1;30mnote: [0minitialize the variable 'myvar' to silence this warning[0m
+    int myvar;
+[0;1;32m             ^
+[0m[0;32m              = 0
+[0m1 warning generated.
