@@ -2,14 +2,14 @@
  * @Author: Yuwei_Gou 379723586@qq.com
  * @Date: 2025-02-17 20:02:40
  * @LastEditors: Yuwei_Gou 379723586@qq.com
- * @LastEditTime: 2025-03-05 11:11:27
+ * @LastEditTime: 2025-03-05 13:54:59
  * @FilePath: /C_study/code/class13_vector/B3745.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 #include <iostream>
 #include <vector>
 
-
+// TODO: NOT ALL AC FIXME:
 int main(){
     int n,m,r;
     std::cin >> n >> m >> r;
