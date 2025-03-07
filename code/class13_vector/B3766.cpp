@@ -2,7 +2,7 @@
  * @Author: Yuwei_Gou 379723586@qq.com
  * @Date: 2025-02-17 20:02:36
  * @LastEditors: Yuwei_Gou 379723586@qq.com
- * @LastEditTime: 2025-03-07 12:23:27
+ * @LastEditTime: 2025-03-07 12:27:59
  * @FilePath: /C_study/code/class13_vector/B3766.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -39,11 +39,7 @@ int main(){
             res_index = temp_res;
         }
     }
-
     for (auto& x:res_index) std::cout << nums[x-1] << " ";
     std::cout << std::endl;
     return 0;
-
-
-
 }
