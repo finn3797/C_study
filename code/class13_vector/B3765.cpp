@@ -2,7 +2,7 @@
  * @Author: Yuwei_Gou 379723586@qq.com
  * @Date: 2025-02-17 20:02:49
  * @LastEditors: Yuwei_Gou 379723586@qq.com
- * @LastEditTime: 2025-03-06 16:40:33
+ * @LastEditTime: 2025-03-07 09:45:54
  * @FilePath: /C_study/code/class13_vector/B3765.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -42,10 +42,5 @@ int main(){
     for (auto& x:summary){
         if (x != 0) result += 1;
     }
-    
     std::cout << result << std::endl;
-
-
-
-
 }
