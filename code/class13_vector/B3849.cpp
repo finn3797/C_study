@@ -2,7 +2,7 @@
  * @Author: Yuwei_Gou 379723586@qq.com
  * @Date: 2025-02-17 20:02:32
  * @LastEditors: Yuwei_Gou 379723586@qq.com
- * @LastEditTime: 2025-03-07 13:00:17
+ * @LastEditTime: 2025-03-08 21:59:14
  * @FilePath: /C_study/code/class13_vector/B3849.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -13,9 +13,7 @@ int main() {
     int n, r;
     std::cin >> n >> r;
     std::vector<char> letters;
-    for (char c = 'A'; c <= 'Z'; c++) {
-        letters.push_back(c);
-    }
+    for (char c = 'A'; c <= 'Z'; c++) letters.push_back(c);
     std::vector<int> res1;
     std::vector<char> res2;
     while(1){
