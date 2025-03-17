@@ -10,7 +10,7 @@ int main(){
     std::cin.getline(str, 10000);
     char res[strlen(str)+1];
     for (int i=0; i<strlen(str); i++){
-        if ( ('a' <= str[i] && str[i] <= 'z') ||  ('A' <= str[i] && str[i] <= 'Z') ){      
+        if ( ('a' <= str[i] && str[i] <= 'z') ||  ('A' <= str[i] && str[i] <= 'Z') ){    //README:  'a' <= str[i] <= 'z'   ===   ('a' <= str[i]) <= 'z'
             if (str[i] == 'a' ){
                 res[i] = 'z';
             }else if (str[i] == 'A' ){
