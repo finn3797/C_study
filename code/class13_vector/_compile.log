@@ -1,0 +1,4 @@
+[1mB3711.cpp:41:27: [0m[0;1;35mwarning: [0m[1munused variable 'digit' [-Wunused-variable][0m
+                long long digit = 1;
+[0;1;32m                          ^
+[0m1 warning generated.

@@ -1,8 +1,8 @@
 /*
- * @Author: finn3797 379723586@qq.com
+ * @Author: Yuwei_Gou 379723586@qq.com
  * @Date: 2025-02-17 20:02:27
- * @LastEditors: finn3797 379723586@qq.com
- * @LastEditTime: 2025-02-17 20:51:19
+ * @LastEditors: Yuwei_Gou 379723586@qq.com
+ * @LastEditTime: 2025-04-04 22:26:15
  * @FilePath: /C_study/code/class13_vector/B3688.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
