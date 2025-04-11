@@ -1,0 +1,16 @@
+[1mmemory_model.cpp:18:20: [0m[0;1;35mwarning: [0m[1mISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings][0m
+    char* rodata = "Hello World";
+[0;1;32m                   ^
+[0m[1mmemory_model.cpp:19:10: [0m[0;1;35mwarning: [0m[1munused variable 'heap1' [-Wunused-variable][0m
+    int* heap1 = (int*)malloc(1024 * 1024 * 100);
+[0;1;32m         ^
+[0m[1mmemory_model.cpp:20:10: [0m[0;1;35mwarning: [0m[1munused variable 'heap2' [-Wunused-variable][0m
+    int* heap2 = new int[256 * 1024 * 200];
+[0;1;32m         ^
+[0m[1mmemory_model.cpp:21:10: [0m[0;1;35mwarning: [0m[1munused variable 'heap3' [-Wunused-variable][0m
+    int* heap3 = new int[256 * 1024 * 400];
+[0;1;32m         ^
+[0m[1mmemory_model.cpp:22:9: [0m[0;1;35mwarning: [0m[1munused variable 'VarInMain' [-Wunused-variable][0m
+    int VarInMain;
+[0;1;32m        ^
+[0m5 warnings generated.
