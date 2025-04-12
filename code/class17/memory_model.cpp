@@ -23,9 +23,13 @@ int main(){
     func();
 
 
-    std::cout << (void *)&func << std::endl;
-    std::cout << (void *)&main << std::endl;
-    std::cout << (void *)rodata << std::endl;
+    std::cout << "func:" << (void *)&func << std::endl;
+    std::cout << "main:" << (void *)&main << std::endl;
+    std::cout << "rodata:" << (void *)rodata << std::endl;
+    std::cout << "heap1:" << (void *)heap1 << std::endl;
+    std::cout << "heap2:" << (void *)heap2 << std::endl;
+    std::cout << "heap3:" << (void *)heap3 << std::endl;
+    std::cout << "VarInMain:" << (void *)&VarInMain << std::endl;
     
     // 内存四区  这个过时啦
     // 代码区  .text .rodata  readonly

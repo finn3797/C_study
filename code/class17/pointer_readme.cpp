@@ -69,6 +69,7 @@ int main(){
 
 
     // int arr2[5] = {1, 2, 3, 4, 5};
+    // std::cout << *(arr2 + 1)
     // int (*ptr2)[5] = &arr2; // 真正指向数组， 而不是指向数组的第一个元素，不会丢失大小信息
     // std::cout << *(*ptr2 + 1) << std::endl;
 
