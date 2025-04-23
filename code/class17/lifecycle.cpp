@@ -43,7 +43,9 @@ int main(){
     // }
     // int a[] = {1, 2, 3};
     // int* ptr2 = a;
-    // std::cout << ptr2[1] << std::endl;
+    // std::cout << ptr2[2] << std::endl;
+    // std::cout << *(ptr2 + 2) << std::endl;
+    
 
     // int (*ptr3)[5] = (int(*)[5])malloc(sizeof(int) * 5);
     // free(ptr);
@@ -61,7 +63,7 @@ int main(){
 
     // int *p4 = new int(5); //初始化为5
     // int *p5 = new int[5]{1, 2, 3, 4, 5}; //初始化为1, 2, 3, 4, 5
-    // std::vector<int>* p6 = new std::vector<int>;
+    // std::vector<int>* p6 = new std::vector<int>;  []
     // std::vector<int>* p7 = new std::vector<int>(5, 1); //初始化为1, 1, 1, 1, 1
     // std::vector<int>* p8 = new std::vector<int>{1, 2, 3, 4, 5}; //初始化为1, 2, 3, 4, 5
     // delete p1;
