@@ -7,11 +7,9 @@
 
 
 int main(){
-    // int n, m;
     std::string s, t;
     std::cin >> s;
     std::cin >> t;
-    // std::cout << s << std::endl << t << std::endl;
     int q;
     std::cin >> q;
     while (q--){
@@ -23,6 +21,5 @@ int main(){
        if (subs == subt) std::cout << "ovo" << std::endl;
        else if (subs > subt) std::cout << "erfusuer" << std::endl;
        else std::cout << "yifusuyi" << std::endl;
-
     }
 }
