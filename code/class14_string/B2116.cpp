@@ -11,26 +11,46 @@
 #include <string.h>
 
 
+// int main(){
+//     char str[51];
+//     std::cin >> str;
+//     int len = strlen(str);
+//     for (int i = len-1; i >= 0; i--){
+//         char res, start, end;
+//         if (islower(str[i])){
+//             res = toupper(str[i]);
+//             end = 'Z';
+//             start = 'A';
+//         }else{
+//             res = tolower(str[i]);
+//             end = 'z';
+//             start = 'a';
+//         }
+//         res += 3;
+//         if (res > end){
+//             res = start + (res - end - 1);
+//         }
+//         std::cout << res;
+//     }
+// }
+
+
 int main(){
     char str[51];
     std::cin >> str;
-    int len = strlen(str);
-    for (int i = len-1; i >= 0; i--){
-        char res, start, end;
-        if (islower(str[i])){
-            res = toupper(str[i]);
-            end = 'Z';
-            start = 'A';
-        }else{
-            res = tolower(str[i]);
-            end = 'z';
-            start = 'a';
-        }
-        res += 3;
-        if (res > end){
-            res = start + (res - end - 1);
-        }
-        std::cout << res;
-    }
-}
+    size_t len = strlen(str);
 
+    for (int i = len-1; i >= 0; i--){
+        char c = str[i];
+        if (islower(c)){
+           c = toupper(c);
+           c += 3;
+           std::cout << ((c > 'Z') ? char(c-'Z' + 'A' - 1) : c);
+        }else{
+           c = tolower(c);
+           c += 3;
+           std::cout << ((c > 'z') ? char(c-'z' + 'a' - 1) : c);
+        }
+    }
+    std::cout << std::endl;
+}

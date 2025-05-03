@@ -23,17 +23,17 @@ int main(){
 
     // std::cout << "str1: " << str1 << std::endl;
     char str2[] = {'c', 'h', 'a', 'r'};
-    std::cout << "str2: " << std::strlen(str2) << std::endl;
+    std::cout << "str2: " << strlen(str2) << std::endl;
     std::cout << "str2: " << sizeof(str2) << std::endl;
     char str3[] = "char";
     std::string str4 = "char\0";
     // 结尾隐藏的 '\0'
-    std::cout << "str2length: " << std::strlen(str2) << std::endl;
+    std::cout << "str2length: " << strlen(str2) << std::endl;
     // 输入
     // 输出
     printf("%s\n", str2);
     std::cout << str3 << std::endl;
-    std::cout << "str3length: " << std::strlen(str3) << std::endl;
+    std::cout << "str3length: " << strlen(str3) << std::endl;
     std::cout << "str3length: " << sizeof(str3) << std::endl;
     std::cout << "str3: " << str3[2] << std::endl;
 
@@ -41,11 +41,11 @@ int main(){
     // string.h  method
     char src[] = "test";
     char dst[5];
-    std::strcpy(dst, src);
+    strcpy(dst, src);
     std::cout << src  << "\t"  <<  dst << std::endl;
 
     char teststr[20] = "qwe";
-    std::strcat(teststr, src);
+    strcat(teststr, src);
     std::cout << teststr << std::endl;
 
     int order = strcmp(src, dst);
@@ -58,10 +58,10 @@ int main(){
 
     char str[] = "= one + two * (three / four)";
     char delimiter[] = "=+*/() ";
-    char* token = std::strtok(str, delimiter);
+    char* token = strtok(str, delimiter);
     while(token != NULL){
         std::cout << token << std::endl;
-        token = std::strtok(NULL, delimiter);
+        token = strtok(NULL, delimiter);
     }
 
 
