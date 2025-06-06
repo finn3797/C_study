@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string.h>
 
 void clear(int* arr, int n){ //形参  int* arr = int arr[]
     memset(arr, 0, sizeof(int) * n);
@@ -58,8 +59,13 @@ int main(){
     // std::cout << *(int *)(uint64_t(&y) + 4) << std::endl;
     // std::cout << *(int *)(std::min(uint64_t(&x), uint64_t(&y))) << std::endl;
 
-    // int arr[5] = {1, 2, 3, 4, 5};
-    // int* ptr = arr; // 等价于 int* ptr = &(arr[0]); 默认做了该隐式转换  隐式转换会丢失大小信息
+    int arr[5] = {1, 2, 3, 4, 5};
+    int* ptr = arr; // 等价于 int* ptr = &(arr[0]); 默认做了该隐式转换  隐式转换会丢失大小信息
+    std::cout << ptr[0] << std::endl;
+    std::cout << *(ptr+1) << std::endl;
+    // int (*ptr2)[5] = &arr;
+    // std::cout << ptr << std::endl;
+    // std::cout << ptr2 << std::endl;
     // std::cout << sizeof(arr) << std::endl;
     // std::cout << sizeof(ptr) << std::endl;
     // std::cout << typeid(arr).name() << std::endl;
@@ -91,9 +97,12 @@ int main(){
     // clear(&arr);
 
 
-    //多维数组指针
+    //多维数组指针  会丢失大小信息
     // int matrix[3][4];
     // int (*ptr)[4] = matrix;
+    // std::cout << sizeof(*ptr) << std::endl;
+    // std::cout << sizeof(ptr) << " " << sizeof(matrix) << std::endl;
+    // std::cout << matrix[2][3] << " " << std::endl;
     // // std::cout << *ptr << std::endl;
     // for (int i = 0; i < 3; i++){
     //     for (int j = 0; j < 4; j++){
@@ -106,8 +115,16 @@ int main(){
     //     std::cout << arr2[i] << " ";
     // }
 
-    // char *p;
+    // char *p = nullptr;
     // std::cout << (void *)p << std::endl;   //char指针会直接打印其字符串遇到/0结束，要获得地址得用void指针  TODO:
+
+    // char* str = "Hello World"; 
+    // std::cout << str[2] << std::endl; 
+    // // stt[2] = 'a'; // Error: 字符串是常量，不能修改  字面量常量，不能修改
+    // char char2[] = "Hello World";
+    // char* pstr = char2; // 
+    // pstr[2] = 'a'; 
+    // std::cout << pstr << std::endl;
 
     // char str[] = "Hello World";
     // char *pstr = str;

@@ -72,8 +72,8 @@ int main(){
     v.erase(v.begin() + 1);
     v.erase(v.begin() + 1, v.begin() + 3);
     查找元素：
-
-
+    std::find(v.begin(), v.end(), 2);
+    
 
 
 
