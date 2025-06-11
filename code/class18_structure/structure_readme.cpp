@@ -2,11 +2,13 @@
 #include <iostream>
 #include <string>
 
-struct Student{
+struct Student
+{
     int score;
     std::string name;
-};
-int main(){
+} stu, stus[100];
+int main()
+{
 
     // Student stu, stus[100];
     // Student* pstu = new Student;
@@ -36,7 +38,6 @@ int main(){
     std::pair<int, std::string> a{99, "xiaoming"};
     auto &[f, s] = a;
     std::cout << f << " " << s << std::endl;
-    
 
     // auto b = make_pair(80, "xiaozhao");
 
