@@ -105,7 +105,8 @@ public:
         if (res.front() == 0)
             res.erase(res.begin());
 
-        return BigInt(res);
+        BigInt result = BigInt(res);
+        return result;
     }
     // 析构函数，用于释放对象的资源
 
