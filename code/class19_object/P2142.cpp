@@ -36,11 +36,19 @@ class BigInt{
                 size = str.length();
             }
             // std::cout << "开始构造，size为:" << size << std::endl;
-            digits = new int[size];
-            int str_length = str.length();
-            for (int i = start, j = 0; i < str_length; i++, j++){
-                digits[j] = int(str[i] - '0');
+            if (size != 0){
+                digits = new int[size];
+                int str_length = str.length();
+                for (int i = start, j = 0; i < str_length; i++, j++){
+                    digits[j] = int(str[i] - '0');
+                }
+            }else{
+                size = 1;
+                digits = new int[size];
+                digits[0] = 0;
             }
+            
+            
         }
 
         BigInt(std::vector<int> &vec, bool sign): sign(sign){
@@ -52,10 +60,17 @@ class BigInt{
             }
             size = vec.size() - bool_start;
             // std::cout << "res_size: " << size << std::endl;
-            digits = new int[size];
-            for (int i = 0; i < size; i++){
-                digits[i] = vec[i+bool_start];
+            if (size != 0){
+                digits = new int[size];
+                for (int i = 0; i < size; i++){
+                    digits[i] = vec[i+bool_start];
+                }
+            }else{
+                size = 1;
+                digits = new int[size];
+                digits[0] = 0;
             }
+            
         }
 
         BigInt operator-(BigInt &other){
